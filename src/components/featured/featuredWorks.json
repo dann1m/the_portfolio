@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Tyricu",
+      "description": "A beautiful african queen stripped in gold",
+      "image": "src/components/featured/images/Tyricu.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Pink Machine",
+      "description": "Capturing the humanity of robots.",
+      "image": "src/components/featured/images/robot.png"
+    },
+    {
+      "id": 3,
+      "title": "Vision",
+      "description": "A beautiful side portrait",
+      "image": "src/components/featured/images/waoh.png"
+    }
+  ]
+  
