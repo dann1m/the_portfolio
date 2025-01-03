@@ -1,0 +1,86 @@
+/* Set up the hero section as a flex container */
+.hero {
+  display: flex;
+  justify-content: space-between; /* Space out the two items */
+  align-items: center; /* Vertically align the items */
+  padding: 2rem;
+  height: 50vh; /* Adjust the height to fit the design */
+  background-color: #F5F4F0; /* Optional background color */
+  color: #3887a4;
+}
+
+/* Styling for the text section */
+.text-section {
+  flex: 1; /* Take up half the space */
+  display: flex;
+  flex-direction: row; /* Align text and handwriting horizontally */
+  align-items: center; /* Vertically align text and handwriting */
+  padding-left: 1rem; 
+  font-size: large;
+  font-family: Inter;
+}
+
+
+.handwriting {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem; 
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  animation: typing 3s steps(30) forwards;
+  /* , erase 3s steps(30) forwards 5s , typing 3s steps(30) 18s forwards; */
+  position: relative; /* Needed for positioning the underline */
+  /* padding-left: 15px; */
+}
+
+
+@keyframes typing {
+  from {
+    opacity: 100%;
+    width: 0;
+  }
+  to {
+    opacity: 100%;
+    width: 100%;
+  }
+}
+
+@keyframes erase {
+  from {
+    width: 100%;
+    opacity: 100%;
+  }
+  to {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes wait {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+/* Box for the image section */
+.image-section {
+  flex: 0.5; /* Take up half the space */
+  height: 400px; 
+  background-color: #ddd; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .handwriting {
+    font-size: 4rem;
+  }
+
+  .image-section {
+    height: 300px; 
+  }
+}
